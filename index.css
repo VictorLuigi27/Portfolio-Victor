@@ -107,6 +107,33 @@ nav a:hover {
     padding: 5%;
 }
 
+.skill_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill_item img {
+    width: 90px;
+    height: auto; 
+}
+
+.skill_item p {
+    margin-top: 10px; /* Espace entre l'image et le texte */
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    bottom: -25px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.skill_item:hover p {
+    opacity: 1;
+}
+
 
 /* Main Projets */
 
